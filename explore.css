@@ -1,0 +1,306 @@
+html{
+  background: #4e5e77;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+.explore-cover{
+  width: 100%;
+  height: 480px;
+  background-image: url(xMU-photo/explore.png);
+  background-size: cover;
+  background-position: center;
+}
+.video-learning{
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+.video-learning .learning-title{
+  text-align: center;
+}
+.video-learning .learning-title h2{
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.video-learning .learning-title p{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin: 15px 30px 35px 30px;
+}
+.video-learning .learning-function{
+  margin: 0 30px;
+}
+.video-learning .learning-function .search{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+.video-learning .learning-function .search .searcharea{
+  text-decoration: none;
+  width: 80%;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 0px;
+}
+.video-learning .learning-function .search .search-logo{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 20px;
+}
+.video-learning .learning-function .search .search-logo img{
+  width: 100%;
+  vertical-align: top;
+}
+.video-learning .learning-function .search .order{
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.video-learning .learning-function .search .order .tri{
+  color: #ffffff;
+  margin-left: 5px;
+}
+.fourcate{
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+button{
+  width: 90px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 33px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #ffffff;
+  margin-left:10px;
+  cursor: pointer;
+}
+button:hover{
+  opacity: 0.8;
+}
+.newcourse{
+  background-image: url(xMU-photo/new.png);
+  background-size: cover;
+  background-position: left;
+}
+.hotcourse{
+  background-image: url(xMU-photo/hot.png);
+  background-size: cover;
+  background-position: right;
+}
+.slide-right{
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 0 30px 200px;
+  box-sizing: border-box;
+}
+.slide-right .new .owl-nav .owl-next{
+  background-image: url(xMU-photo/newnext.svg);
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px;
+  font-size: 25px;
+  text-indent: -5px;
+}
+.slide-right .new .owl-nav .owl-prev{
+  background-image: url(xMU-photo/newpre.svg);
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px;
+  font-size: 25px;
+  text-indent: 5px;
+}
+.slide-left .hot .owl-nav .owl-next{
+  background-image: url(xMU-photo/hotnext.svg);
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px;
+  font-size: 25px;
+  text-indent: -5px;
+}
+.slide-left .hot .owl-nav .owl-prev{
+  background-image: url(xMU-photo/hotpre.svg);
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px;
+  font-size: 25px;
+  text-indent: 5px;
+}
+.other .course .owl-nav .owl-next{
+  background-image: url(xMU-photo/othernext.svg);
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px;
+  font-size: 25px;
+  text-indent: -5px;
+}
+.other .course .owl-nav .owl-prev{
+  background-image: url(xMU-photo/otherpre.svg);
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px;
+  font-size: 25px;
+  text-indent: 5px;
+}
+.slide-right h2,
+.slide-left h2{
+  display: none;
+}
+.slide-left{
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 200px 30px 0;
+  box-sizing: border-box;
+}
+.video{
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25);
+  margin: 10px 0;
+  cursor: pointer;
+}
+.video a{
+  text-decoration: none;
+}
+.video .video-pic img{
+  width: 100%;
+  vertical-align: top;
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px ;
+}
+.video .video-pic{
+  overflow: hidden;
+}
+.video .video-content{
+  padding: 15px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.video .video-content h3{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+  flex: 1 0 0;
+}
+.video .video-content .rate{
+  width: 60%;
+  margin: 20px 0;
+}
+.video .video-content .rate img{
+  width: 100%;
+  vertical-align: top;
+}
+.video .video-content .price{
+  font-size: 20px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+}
+.other{
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+.other h2{
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.video:hover{
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.25);
+}
+.morecourse{
+  background-image: url(xMU-photo/other.png);
+  background-size: auto 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (min-width:1024px){
+  .video-learning .learning-title{
+    text-align: left;
+    margin: 0 50px;
+  }
+  .video-learning .learning-title p{
+    width: 50%;
+    margin: 15px 0px 35px 0px;
+  }
+  .video-learning .learning-function{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .video-learning .learning-function .search{
+    width: 50%;
+    justify-content: flex-start;
+  }
+  .video-learning .learning-function{
+    margin: 0;
+  }
+  button{
+    width: 100px;
+  }
+  .fourcate{
+    margin: 0;
+  }
+  .slide-right{
+    padding: 30px 0 30px 300px;
+  }
+  .slide-left{
+    padding: 30px 300px 30px 0;
+  }
+}
+@media screen and (min-width:1200px){
+  .video-learning .learning-title{
+    margin: 0;
+  }
+}

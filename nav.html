@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="maninnav.css">
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+  <input type="checkbox" name="" id="menu-control">
+  <nav class="xMU-mainnav">
+  <div class="nav">
+    <div class="header">
+      <a class="xMU-logo" href="https://chingyeeee.github.io/xMU/xMU-mainpage.html"><img src="xMU-logo/logo.svg" alt="xMU躍起-網站名稱"></a>
+      <ul class="mainnav">
+        <li class="navcontent">
+          <a class="nav explore" href="https://chingyeeee.github.io/xMU/xMU-explorecourse.html
+          ">課程探索</a>
+          <div class="content">
+           <a href="https://chingyeeee.github.io/xMU/xMU-explorecourse.html
+           ">影片學習</a>
+           <a href="https://chingyeeee.github.io/xMU/xMU-tutor
+           ">一對一課程</a>
+          </div>
+        </li>
+        <li class="navcontent">
+          <a class="nav hit-sheet" href="https://chingyeeee.github.io/xMU/xMU-musicsheet.html
+        ">熱門樂譜</a>
+          <div class="content">
+            <a href="#">流行歌曲</a>
+            <a href="#">經典歌曲</a>
+          </div>
+        </li>
+        <li class="navcontent">
+          <a class="nav guitar" href="https://chingyeeee.github.io/xMU/xMU-guitar
+          ">吉他專欄</a>
+          <div class="content">
+            <a href="https://chingyeeee.github.io/xMU/xMU-guitar.news">最新消息</a>
+            <a href="#">吉他小教室</a>
+            <a href="#">吉他選購</a>
+            <a href="#">周邊配件</a>
+            <a href="#">器材評測</a>
+            <a href="#">吉他雜談</a>
+          </div>
+        </li>
+        <li class="navcontent">
+          <a class="nav about" href="https://chingyeeee.github.io/xMU/xMU-about.html">關於我們</a>
+          <div class="content">
+            <a href="https://chingyeeee.github.io/xMU/xMU-about.teacher.html
+            ">師資介紹</a>
+            <a href="https://chingyeeee.github.io/xMU/xMU-about.html
+            ">聯絡我們</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <label for="menu-control" class="hb">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="xMU-funtion">
+      <div class="search">
+        <input type="text" class="searcharea" href="#"></input>
+        <div class="search-logo"><img src="xMU-logo/search.svg" alt="搜尋功能"></div>
+      </div>
+        <a class="shoppingcart" href="#"><img src="xMU-logo/cart.svg" alt="購物車"></a>
+        <a class="profile" href="#"><img src="xMU-logo/profile.svg" alt="個人帳號"></a>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
+
+<!-- .main-header{
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4e5e77;
+  padding: 10px;
+  position: relative;
+}
+.logo img{
+  vertical-align: top;
+}
+/* .hb{
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.hb span{
+  width: 32px;
+  height: 2px;
+  background-color: #fff;
+} */
+.main-nav a{
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+#menu-control{
+  display: none;
+}
+/* ###################################### */
+@media screen and (max-width: 1024px){
+  .hb{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(106, 115, 130, 0.8);
+    position: relative;
+  }
+  .hb span{
+    --tb: 19px;
+   width: 25px;
+   height: 2px;
+   background-color: #fff;
+   border-radius: 5px;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+   /* transition: .4s; */
+   transition: top .5s .2s,
+               bottom .5s .2s, 
+               opacity .5s, 
+               transform .2s;
+  }
+  .hb span:first-child{
+    /* transform: translateY(-10px) rotate(0deg); */
+    top: var(--tb);
+    transform: rotate(0deg);
+  }
+  .hb span:last-child{
+    /* transform: translateY(10px) rotate(0deg); */
+    bottom: var(--tb);
+    transform: rotate(0deg);
+  }
+  .main-nav{
+    position: absolute;
+    top: 100%;
+    right: -80%;
+    background-color: rgba(106, 115, 130, 0.8);
+    width: 80%;
+    height: calc(100vh - 60px);
+    padding-top: 50px;
+    transition: right 1s;
+ }
+ .main-nav a{
+   display: block;
+ }
+ #menu-control:checked ~ .main-header .main-nav{
+   right: 0;
+ }
+ #menu-control:checked ~ .main-header .hb span:first-child{
+   top: 0;
+   transform: rotate(315deg);
+   transition: top .5s,
+               bottom .5s, 
+               opacity .5s, 
+               transform .2s .5s;
+   /* transform: translateY(0px) rotate(315deg); */
+ }
+ #menu-control:checked ~ .main-header .hb span:last-child{
+   bottom: 0;
+   transform: rotate(-315deg);
+   transition: top .5s,
+               bottom .5s, 
+               opacity .5s, 
+               transform .2s .5s;
+   /* transform: translateY(0px) rotate(-315deg); */
+ }
+ .hb span:nth-child(2){
+   opacity: 1;
+ }
+ #menu-control:checked ~ .main-header .hb span:nth-child(2){
+   opacity: 0;
+ }
+}
+@media screen and (min-width: 1025px){
+.hb{
+  display: none;
+}
+.main-nav{
+  position: relative;
+  top: 0%;
+  right: 0%;
+  width: auto;
+  height: auto;
+  padding-top: 0px;
+  background-color: transparent;
+}
+.main-nav a{
+  display: inline-block;
+}
+}
+</style>
+</head>
+<body>
+<input type="checkbox" name="" id="menu-control">
+<header class="main-header">
+<!-- logo -->
+<!-- <h1 class="logo">
+  <a href="#">
+    <img src="https://fakeimg.pl/100x40/">
+  </a>
+</h1>
+<!-- 漢堡 -->
+<!-- <label for="menu-control" class="hb">
+  <span></span>
+  <span></span>
+  <span></span>
+</label> -->
+<!-- 主選單 -->
+<!-- <nav class="main-nav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</nav>
+</header> --> 

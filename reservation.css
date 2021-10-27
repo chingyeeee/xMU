@@ -1,0 +1,164 @@
+html{
+  background: #4e5e77;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+.re-cover{
+  width: 100%;
+  height: 480px;
+  background-image: url(xMU-photo/re-cover.png);
+  background-size: cover;
+}
+.re-content{
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+.re-content .re-title{
+  margin-bottom: 50px;
+}
+.re-content .re-title h2{
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.re-content .re-title p{
+  width: 50%;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+.re-content .re-title li{
+  width: 60%;
+  list-style: decimal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.re-detail{
+  display: flex;
+  align-items: flex-end;
+}
+.re-detail .re-info{
+  width: 40%;
+}
+.re-detail .re-info .course p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin: 10px;
+}
+.re-detail .re-info .course select{
+  width: 90%;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  appearance: none;
+}
+.re-detail .re-info .teacher{
+  margin: 20px 0;
+}
+.re-detail .re-info .teacher .teacher-detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.re-detail .re-info .teacher .teacher-detail p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin: 10px;
+}
+.re-detail .re-info .teacher .teacher-detail a{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid ;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 1px;
+  margin-bottom: 10px;
+  margin-right: 10%;
+}
+.re-detail .re-info .teacher select{
+  width: 90%;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  appearance: none;
+}
+.re-detail .re-question{
+  width: 60%;
+}
+.re-detail .re-info .info label{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin: 10px;
+}
+.re-detail .re-info .info input{
+  width: 90%;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 20px;  
+  border: 0;
+}
+.re-detail .re-info .info:nth-child(4){
+  margin: 30px 0;
+}
+button{
+  width: 125px;
+  height: 40px;
+  background-color: #fff9e1;
+  border: 3px solid #fdecae;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #6a7382;
+  margin: 50px 0;
+  cursor: pointer;
+}
+.re-detail .re-question{
+  margin-left: 130px;
+}
+.re-detail .re-question label{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin: 10px;
+}
+.re-detail .re-question textarea{
+  width: 70%;
+  height: 246px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: 0;
+}
+.submit{
+  max-width: 1200px;
+  margin: auto;
+}

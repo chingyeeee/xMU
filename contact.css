@@ -1,0 +1,111 @@
+html{
+  background: #4e5e77;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+.cover{
+  background-image: url(xMU-photo/about.png);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+  margin-bottom: 50px;
+}
+.about{
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.about h2{
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.5em;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  top: -290px;
+  transform: translate(-48%,-50%);
+}
+.about .about-content{
+  max-width: 1200px;
+  margin-bottom: 50px;
+}
+.about .about-content .address{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+.about .about-content h3{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  color: #FFFFFF;
+  width: 20%;
+}
+.about .about-content p{
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-left: 60px;
+}
+.about .about-content .time{
+  display: flex;
+  align-items: flex-start;
+  margin: 20px;
+  width: 100%;
+}
+.about .about-content .phone{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+.about .about-content .email{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+.about .about-content .about-pic{
+  width: 100%;
+  text-align: center;
+}
+.about .about-detail{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width:1024px){
+  .about .about-content{
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .cover::before{
+    content: " ";
+    width: 3px;
+    height: 500px;
+    background-color: #E5E5E5;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+  }
+  .about .about-content .about-detail{
+    width: 50%;
+  }
+  .about .about-content .about-pic{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 100px;
+  }
+}
+@media screen and (min-width:1200px){
+
+}

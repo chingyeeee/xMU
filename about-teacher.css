@@ -1,0 +1,105 @@
+html{
+  background: #4e5e77;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+.cover{
+  background-image: url(xMU-photo/aboutteacher.png);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.cover p{
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: auto;
+}
+.introduction{
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.introduction .teacher-content{
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+}
+.introduction h2{
+  display: none;
+}
+.introduction .teacher-content .intro{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.introduction .teacher-content .intro .deco{
+  padding: 5px;
+  display: none;
+}
+.introduction .teacher-content .intro .deco img{
+  vertical-align: top;
+  width: 100%;
+}
+.introduction .teacher-content .intro .teacher{
+  padding: 5px;
+}
+.introduction .teacher-content .intro .teacher img{
+  vertical-align: top;
+  width: 100%;
+}
+.introduction .teacher-content .intro .teacher{
+  position: relative;;
+  overflow: hidden;
+}
+.introduction .teacher-content .intro .teacher .teacher-name{
+  background: rgba(78, 94, 119, 0.5);
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 20px;
+  position: absolute;
+  bottom: -80px;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-align: center;
+}
+.introduction .teacher-content .intro .teacher:hover .teacher-name{
+ bottom: 0;
+ transition: 0.6s ease-out
+}
+.introduction .teacher-content .intro .teacher:hover{
+  opacity: .9;
+}
+@media screen and (min-width:1024px) {
+  .introduction .teacher-content{
+    display: flex;
+    justify-content: center;
+  }
+  .introduction .teacher-content .intro{
+    width: 33.333333%;
+    display: flex;
+    flex-direction: column;
+  }
+  .introduction .teacher-content .intro .deco{
+    padding: 5px;
+    display: block;
+  }
+  .introduction h2{
+    top: -30%;
+  }
+  .introduction .teacher-content .intro{
+    margin: 0;
+  }
+}

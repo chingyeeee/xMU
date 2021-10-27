@@ -1,0 +1,503 @@
+html{
+  background: #4e5e77;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+.cover{
+  background-image: url(xMU-photo/viddeobg.png);
+  background-size: cover;
+  background-color: #fff;
+  padding: 100px 0;
+}
+.cover h2{
+  font-size: 36px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+}
+.video-content{
+  max-width: 1200px;
+  margin-top: 30px;
+}
+.video-content .video{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.video-content .video .video-cover {
+  position: relative;
+}
+.video-content .video .video-pic {
+  width: 100%;
+  height: 425px;
+}
+.video-content .video .video-pic img{
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.video-content .video .video-cover .play{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.video-content .video .video-detail{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  flex-grow: 1;
+}
+.video-content .video .video-detail .cate{
+  display: flex;
+  flex-direction: column;
+}
+.video-content .video .video-detail p{
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.video-content .video .video-detail .price{
+  font-size: 36px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+  margin-top: 15px;
+  flex-grow: 1;
+}
+.video-content .video .video-detail .level{
+  width: 80%;
+  margin: 20px 0 0 0;
+}
+.video-content .video .video-detail .level img{
+  width: 100%;
+
+  vertical-align: top;
+}
+.video-content .video .video-detail .buy{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.video-content .video .video-detail .buy .rate{
+  justify-self: flex-start;
+}
+.video-content .video .video-detail .buy .rate{
+  display: flex;
+  align-items: center;
+}
+.video-content .video .video-detail .buy .rate .rate-pic{
+  width: 40px;
+  height: 48.86px;
+}
+.video-content .video .video-detail .buy .rate .rate-pic img{
+  width: 100%;
+  vertical-align: top;
+}
+.video-content .video .video-detail .buy .rate .rate-score{
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #4E5E77; 
+  margin-left: 15px;
+}
+.video-content .video .video-detail .buy .shop{
+  display: flex;
+  align-items: center;
+}
+.video-content .video .video-detail .buy .shop .buynow{
+  width: 120px;
+  height: 40px;
+  background: #FFF9E1;
+  border: 3px solid #FDECAE;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #6A7382;
+}
+.video-content .video .video-detail .buy .shop .cart{
+  width: 40px;
+  height: 40px;
+  background: #FFF9E1;
+  border: 3px solid #FDECAE;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 25px;
+}
+.video-content .video .video-detail .buy .shop .cart img{
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+}
+.video-chapter{
+  padding-top: 20px;
+}
+.video-content .video-chapter .chapter-content{
+  background-color: #ffffff;
+  padding-top: 10px;
+  margin: 20px;
+}
+.video-content .video-chapter .chapter-content p{
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+  padding: 0 20px;
+  border-bottom: 1px solid #4E5E77;
+}
+.video-content .video-chapter .chapter-content .ch-content{
+  display: flex;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail{
+  width: 100%;
+  height: 550px;
+  padding: 0 20px 0 10px;
+  overflow: auto;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail::-webkit-scrollbar{
+  width: 10px;
+  padding: 2px;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail::-webkit-scrollbar-thumb{
+  background-color: #4E5E77;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  margin: 0 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #4E5E77;;
+  padding: 15px 0;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-title{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 15px;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-title .classname{
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+  margin-left: 15px;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-time{
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+  align-self: flex-end;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-title .play{
+  width: 35px;
+  height: 35px;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-title .play img{
+  vertical-align: top;
+  width: 100%;
+}.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 110px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #4E5E77;;
+  padding: 15px 0;
+  margin: 0 10px;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing .ch-title{
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  flex-grow: 1;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing .ch-title .classname{
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+  margin-left: 15px;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing .sing-time{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 10px 0;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing .sing-time .sing{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100px;
+  height: 35px;
+  background: #4e5e77;
+  color: #ffffff;
+  border: 3px solid #4E5E77;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing .sing-time .ch-time{
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing .ch-title .play{
+  width: 35px;
+  height: 35px;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing .ch-title .play img{
+  vertical-align: top;
+  width: 100%;
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing{
+  width: 100%;
+  box-sizing: border-box;
+}
+.classes{
+  background-image: url(xMU-photo/guitarbig.png);
+  background-size: contain;
+}
+.class{
+  max-width: 1200px;
+  margin-top: 50px;
+}
+.class .class-detail {
+  padding: 0 20px;
+}
+.class .class-detail h3{
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.class .class-detail p{
+  font-size: 18px;
+  line-height: 35px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.class .class-detail .course-rate h3{
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+}
+.class .class-detail .course-rate .member{
+  display: flex;
+  align-items: center;
+}
+.class .class-detail .course-rate .member .member-name{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-left: 15px;
+}
+.class .class-detail .course-rate .member-rate{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+.class .class-detail .course-rate .member-rate .rate{
+  width: 88%;
+  margin-left: auto;
+  margin-top: 10px;
+}
+.class .class-detail .course-rate .member-rate .comment{
+  width: 88%;
+  margin-left: auto;
+  flex-grow: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.class .class-detail .course-rate .member-rate .date{
+  align-self: flex-end;
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.class .class-detail .course-rate .member .member-pic img{
+  vertical-align: top;
+}
+.class .other-course{
+  padding: 0 10px;
+}
+.class .other-course h3{
+  font-size: 28px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.class .other-course .course{
+  display: flex;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 250px;
+}
+.class .other-course .course:hover{
+  opacity: .8;
+}
+.class .other-course a{
+  text-decoration: none;
+}
+.class .other-course .course .course-pic{
+  width: 55%;
+}
+.class .other-course .course .course-pic img{
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.class .other-course .course .course-content{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 15px 20px;
+}
+.class .other-course .course .course-content .course-title{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+}
+.class .other-course .course .course-content .level{
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  margin: 15px 0;
+}
+.class .other-course .course .course-content .level img{
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.class .other-course .course .course-content .price{
+  align-self: flex-end;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+}
+.btn{
+  cursor: pointer;
+  margin: 50px 0;
+}
+.more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 38px;
+  background: #FFF9E1;
+  border: 3px solid #FDECAE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 20px;
+  letter-spacing: 0.1em;
+  color: #6A7382;
+}
+.more:hover{
+  opacity: .8;
+}
+button:hover{
+  opacity: .8;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 768px){
+  .class .other-course .course{
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .video-content{
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .video-chapter{
+    padding-top: 0px;
+  }
+  .video-content .video-chapter .chapter-content{
+    margin: 0;
+  }
+  .video-content .video{
+    width: 57%;
+  }
+  .video-content .video-chapter{
+    width: 43%;
+  }
+  .video-content .video-chapter{
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 0;
+  }
+  .class{
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  .class .class-detail{
+    width: 50%;
+    margin-right: 10%;
+  }
+  .class .class-detail {
+    padding: 0;
+  }
+  .class .other-course{
+    width: 40%;
+    padding: 0;
+  }
+  .class .other-course .course{
+    height: 230px;
+  }
+  .classes{
+    background-image: url(xMU-photo/guitarbig.png);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px){
+  .class{
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    padding: 0;
+  }
+  .class .other-course .course{
+    height: 200px;
+  }
+}

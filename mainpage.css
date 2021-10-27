@@ -1,0 +1,566 @@
+html{
+  background: #4e5e77;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+.xMU-cover{
+  background-image: url(xMU-photo/cover-photo.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.xMU-cover .cover-slogan{
+  position: relative;
+  animation: fadeInAnimation ease 7s; 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0;
+  }
+  100% { 
+      opacity: 1; 
+  } 
+} 
+.xMU-cover .cover-slogan h2{
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 56px;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.xMU-cover .cover-slogan h2::before{
+  content: ' “ ';
+  position: absolute;
+  left: -.5em;
+  top: -.5em;
+  font-size: 56px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.xMU-cover .cover-slogan h2::after{
+  content: ' ” ';
+  position: absolute;
+  bottom: -1em;
+  right: -.5em;
+  font-size: 56px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  z-index: 3;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.xMU-cover .cover-slogan::after{
+  content: " ";
+  width: 283px;
+  height: 283px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(253, 236, 174, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-blend-mode: hard-light;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.xMU-cover .cover-slogan .lightup{
+  color: #fdecae;
+}
+.xMU-course{
+  background-image: url(xMU-photo/mainbg.png);
+  background-size: cover;
+  background-position: center;
+}
+.xMU-course .course-content{
+  justify-content: center;
+}
+.xMU-course .course{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+.xMU-course .course .pic{
+  width: 50%;
+}
+.xMU-course .course .pic img{
+  vertical-align: top;
+  width: 100%;
+}
+.xMU-course .course .txt{
+  margin-top: 40px;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+.xMU-course .course .txt h2{
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 33px;
+}
+.xMU-course .course .txt p{
+  font-size: 18px;
+  line-height: 35px;
+  margin: 20px 0 45px 0;
+}
+button{
+  width: 119px;
+  height: 40px;
+  background-color: #fff9e1;
+  border: 3px solid #fdecae;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #6a7382;
+  cursor: pointer;
+}
+.video-learning{
+  padding: 50px;
+}
+.video-learning .cate-head{
+  width: 140px;
+  margin: auto;
+  position: relative;
+}
+.video-learning .cate-head::before{
+  content: " ";
+  width: 73px;
+  height: 73px;
+  background-image: url(xMU-logo/bordertop.svg);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+.video-learning .cate-head::after{
+  content: " ";
+  width: 73px;
+  height: 73px;
+  background-image: url(xMU-logo/bordertop.svg);
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: -5px;
+  left: 73px;
+}
+.video-learning .cate-bg{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(253, 236, 174, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  background-blend-mode: hard-light;
+  border: 3px solid #FDFDFD;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25);
+
+}
+.video-learning .cate-head p{
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.4em;
+  color: #FFFFFF;
+  margin: 30px 0;
+  padding-left: 0.4em;
+}
+.video-learning .cate-content .song{
+  background-image: url(xMU-photo/cate-1.png);
+  background-size: cover;
+  background-position: center;
+}
+.video-learning .cate-content .skills{
+  background-image: url(xMU-photo/cate-2.png);
+  background-size: cover;
+  background-position: center;
+}
+.video-learning .cate-content .musicsheet{
+  background-image: url(xMU-photo/cate-3.png);
+  background-size: cover;
+  background-position: center;
+}
+.video-learning .cate-content .edit{
+  background-image: url(xMU-photo/cate-4.png);
+  background-size: cover;
+  background-position: center;
+}
+.video-learning .cate-content .cate{
+  text-align: center;
+  width: 200px;
+  height: 200px; 
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  padding: 32px 0;
+  position: relative;
+}
+.video-learning .cate-content .fourcate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  cursor: pointer;
+}
+.video-learning .cate-content .cate::after{
+  content: " ";
+  width: 150px;
+  height: 30px;
+  background: radial-gradient(50% 50% at 50% 50%, #6A7382 0%, rgba(106, 115, 130, 0) 100%);
+  position: absolute;
+  top: 120%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.video-learning .cate-content .fourcate:hover .cate:after{
+ animation: stop 1s infinite ;
+}
+.video-learning .cate-content .cate:hover{
+  animation: dotdot 1s infinite;
+}
+.video-learning .cate-content .fourcate:hover .cate{
+  border: 3px solid #FDECAE;
+}
+.video-learning .cate-content .fourcate:hover .cate::after{
+  background: radial-gradient(50% 50% at 50% 50%, #FDECAE 0%, rgba(253, 236, 174, 0) 100%);
+}
+.video-learning .cate-content .cate .cate-pic{
+  width: 100%;
+}
+.video-learning .cate-content .cate .cate-title{
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+img{
+  vertical-align: top;
+}
+.xMU-freecourse{
+  max-width: 1200px;
+  height: 750px;
+  margin: auto;
+  background-image: url(xMU-photo/freebg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.xMU-freecourse .free{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(xMU-photo/free.png);
+  background-position: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.xMU-freecourse .free .free-title{
+  text-align: center;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.xMU-freecourse .free .free-title h2{
+  font-size: 28px;
+}
+.xMU-freecourse .free .free-title p{
+  font-size: 24px;
+}
+.xMU-freecourse .free .free-content .content{
+  display: flex;
+  align-items: center;
+}
+.xMU-freecourse .free .free-content{  
+  margin: 40px 0 50px 0;
+}
+.xMU-freecourse .free .free-content .content:nth-child(2){
+  padding: 19px 0;
+}
+.xMU-freecourse .free .free-content .content label{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-right: 12px;
+}
+.xMU-freecourse .free .free-content .content input{
+  width: 375px;
+  height: 35px;
+  left: 557px;
+  top: 2448px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  border: 0;
+}
+.xMU-member{
+  background-image: url(xMU-photo/feedbackbg.png);
+  background-size: cover;
+}
+.member-feedback{
+  max-width: 1400px;
+  margin-left: auto;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+}
+.member-feedback .feedback-title{
+  width: 20%;
+}
+.xMU-member h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+.xMU-member .feedback{
+  display: flex;
+  width: 80%;
+}
+.xMU-member .feedback .member{
+  height: 450px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 30px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin: 10px;
+}
+.xMU-member .feedback .member .feedback-content{
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+  flex-grow: 1;
+}
+.xMU-member .feedback .member .author{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.xMU-member .feedback .member .author .author-pic img{
+  vertical-align: top;
+}
+.xMU-member .feedback .member .author .author-name{
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #4E5E77;
+  margin-right: 20px;
+}
+.xMU-sheetmusic{
+  background-image: url(xMU-photo/sheetorder.png);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+.xMU-sheetmusic h2{
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+.xMU-sheetmusic .first-five{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+.xMU-sheetmusic .first-five .order{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+}
+.xMU-sheetmusic .first-five:hover .order{
+  opacity: 1;
+  transition: .8s;
+}
+.xMU-sheetmusic .first-five .order p{
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #FDECAE;
+  margin-bottom: 30px;
+}
+.xMU-sheetmusic .first-five .order .number{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #FDECAE;
+  margin-bottom: 98px;
+}
+.xMU-sheetmusic .first-five .order .number:nth-child(6){
+  margin-bottom: 40px;
+}
+.xMU-sheetmusic .first-five .order .month{
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.xMU-sheetmusic .first-five .line{
+  height: 577px;
+  background-size: cover;
+  margin-left: 50px;
+  width: 61%;
+}
+.xMU-sheetmusic .first-five:hover .line .line-pic {
+  width: 100%;
+  transition: 4s;
+  transition-delay: 1s;
+}
+.xMU-sheetmusic .first-five .line .line-pic{
+  width: 0;
+  background-image: url(xMU-photo/line.svg);
+}
+.xMU-sheetmusic .first-five .line .line-pic img{
+  opacity: 0;
+}
+.xMU-sheetmusic .first-five .songlist{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  opacity: 0;
+}
+.xMU-sheetmusic .first-five:hover .songlist{
+  opacity: 1;
+  transition: 3s;
+  transition-delay: 4.5s;
+}
+.xMU-sheetmusic .first-five .songlist a{
+  text-decoration: none;
+}
+.xMU-sheetmusic .first-five .songlist .song{
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  height: 90px;
+  width: 280px;
+  margin-left: -16px;
+}
+.xMU-sheetmusic .first-five .songlist .song .song-pic{
+  border: 5px solid #FDECAE;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
+  background-color: #FDECAE ;
+}
+.xMU-sheetmusic .first-five .songlist .song .song-pic img{
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+.xMU-sheetmusic .first-five .songlist .song .song-content{
+  margin-left: 15px;
+}
+.xMU-sheetmusic .first-five .songlist .song .song-content h3{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.xMU-sheetmusic .first-five .songlist .song .song-content p{
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.xMU-sheetmusic .more{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.xMU-sheetmusic button{
+  cursor: pointer;
+}
+@keyframes dotdot{
+  0%{
+    bottom:0px;
+  }
+  25%{
+    bottom:10px;
+  }
+  50%{
+    bottom:0px;
+  }
+  75%{
+    bottom:10px;
+  }
+  100%{
+    bottom:0px;
+  }
+}
+@media screen and (min-width:768px){
+  .xMU-freecourse .free{
+    width: 600px;
+    height: 600px;
+  }
+}
+@media screen and (min-width:1024px){
+  .xMU-course .course-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+  }
+  .xMU-course .course{
+    width: 50%;
+    margin: 100px;
+  }
+  .video-learning{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 50px 0 150px 0;
+  }
+  .video-learning .cate-head{
+    width: 20%;
+  }
+  .video-learning .cate-content{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
