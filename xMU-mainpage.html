@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="owl.carousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="owl.carousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="js/jquery-3.6.0.js">
+  <link rel="stylesheet" href="js/jquery-ui.js">
 </head>
 <body>
   <div class="xMU">
@@ -382,7 +384,19 @@
         }
       );
     });
-    
+    $(function(){
+      $('.first-five').scrollTop(0, function(){
+        $('.order').animate({
+          opacity: 1,
+        },800,'fadeIn');
+        $('.line>.line-pic').delay(1000).animate({
+          width:'100%',
+        },4000,'fadeIn');
+        $('.songlist').delay(4500).animate({
+          opacity: 1,
+        },300,'fadeIn');
+      })
+    });
   </script>
 </body>
 </html>
