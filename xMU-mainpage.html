@@ -384,8 +384,13 @@
         }
       );
     });
+    // $(document).ready(function(){
+    //   $('html').load(function(){
+    //     $('.cover-slogan').fadeTo(7000, 1);
+    //   });
+    // });
     $(function(){
-      $('.first-five').scrollTop(0, function(){
+      $('.first-five').scrollTop(0).animate(function(){
         $('.order').animate({
           opacity: 1,
         },800,'fadeIn');
@@ -395,7 +400,7 @@
         $('.songlist').delay(4500).animate({
           opacity: 1,
         },300,'fadeIn');
-      })
+      });
     });
   </script>
 </body>
