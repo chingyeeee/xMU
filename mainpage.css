@@ -406,10 +406,10 @@ img{
   align-items: center;
   opacity: 0;
 }
-/* .xMU-sheetmusic .first-five:hover .order{
+.xMU-sheetmusic .first-five:hover .order{
   opacity: 1;
   transition: .8s;
-} */
+}
 .xMU-sheetmusic .first-five .order p{
   font-size: 12px;
   line-height: 25px;
@@ -442,11 +442,11 @@ img{
   margin-left: 50px;
   width: 61%;
 }
-/* .xMU-sheetmusic .first-five:hover .line .line-pic {
+.xMU-sheetmusic .first-five:hover .line .line-pic {
   width: 100%;
   transition: 4s;
   transition-delay: 1s;
-} */
+}
 .xMU-sheetmusic .first-five .line .line-pic{
   width: 0;
   background-image: url(xMU-photo/line.svg);
@@ -460,11 +460,11 @@ img{
   align-self: center;
   opacity: 0;
 }
-/* .xMU-sheetmusic .first-five:hover .songlist{
+.xMU-sheetmusic .first-five:hover .songlist{
   opacity: 1;
   transition: 3s;
   transition-delay: 4.5s;
-} */
+}
 .xMU-sheetmusic .first-five .songlist a{
   text-decoration: none;
 }
