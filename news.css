@@ -19,7 +19,7 @@ html{
   margin: auto;
   text-align: center;
 }
-.class .class-title h1{
+.class .class-title h2{
   font-weight: 500;
   font-size: 36px;
   line-height: 42px;
@@ -45,7 +45,7 @@ html{
   right: 0;
   z-index: -1;
   width: 80%;
-  height: 97%;
+  height: 197%;
   background: url(xMU-photo/newsbg.svg) right;
   background-position: center;
 }
