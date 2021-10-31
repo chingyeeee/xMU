@@ -11,10 +11,22 @@ html{
   background-position: center;
 }
 .detail{
-  background-image: url(xMU-photo/sheet-bg2.png);
-  background-size: cover;
-  background-position: center;
+  background-image: url(xMU-photo/sheet-bg2.png),
+                    url(xMU-photo/musicbg.png);
+  background-size: cover, 50%;
+  background-repeat: no-repeat, repeat;
   width: 100%;
+  animation: animatedBackground 5500s linear infinite;
+  animation-duration: 5500s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: animatedBackground;
+  background-position: 0 0;
+  background-repeat: repeat-x;
 }
 .order{
   max-width: 1200px;
@@ -98,8 +110,19 @@ html{
   max-width: 1200px;
   margin: auto;
 }
-.order-content .songlist:hover{
-  opacity: 0.8;
+.order-content .songlist:hover .song-item .song .song-title h3,
+.order-content .songlist:hover .song-item .song .song-title .singer{
+  color: #FDECAE;
+  transition: .3s;
+}
+@keyframes animatedBackground {
+  from {
+      width: 100000% -15%
+  }
+
+  to {
+      width: 0 -15%
+  }
 }
 .order-content .songlist:nth-child(odd){
   background: linear-gradient(180deg, rgba(253, 236, 174, 0.2) 0%, rgba(253, 236, 174, 0) 100%);

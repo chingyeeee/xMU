@@ -9,7 +9,7 @@
   left: 0;
   right: 0;
   margin: auto;
-  z-index: 3;
+  z-index: 4;
 }
 .xMU-mainnav .nav{
   max-width: 1200px;
@@ -72,6 +72,24 @@
   color: #FDECAE ;
   transition: .1s;
 }
+.mainnav .navcontent .content .nav{
+  position: relative;
+}
+.mainnav .navcontent .nav::after{
+  content: " ";
+  position: absolute;
+  left:50%;
+  bottom: 10px;
+  transform: translateX(-50%) scaleX(0);
+  width: 70%;
+  height: 2px;
+  background-color: rgba(106, 115, 130,0.85);
+  transition-duration:1s;
+}
+.mainnav .navcontent:hover .nav::after{
+  transform: translateX(-50%) scaleX(1);
+  background-color: #FDECAE;
+}
 #menu-control{
   display: none;
 }
@@ -123,7 +141,6 @@
     background-color: rgba(106, 115, 130, 0.8);
     width: 60%;
     height: calc(100vh - 60px);
-    padding-top: 30px;
     transition: right 1s;
   }
   #menu-control:checked ~ .xMU-mainnav .nav .header .mainnav{
@@ -151,10 +168,10 @@
   .mainnav li{
     width: 50%;
     position: relative;
-    right: -20%;
+    right: -10%;
   }
   .mainnav .navcontent{
-    margin: 0 10px;
+    margin: 0px 10px -35px 0px;
   }
   .mainnav .content a{
     display: block;
