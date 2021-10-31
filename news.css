@@ -39,20 +39,10 @@ html{
   vertical-align: top;
   display: none;
 }
-.articlebg .bg-pic{
-  position: absolute;
-  top: 100px;
-  right: 0;
-  z-index: -1;
-  width: 80%;
-  height: 197%;
-  background: url(xMU-photo/newsbg.svg) right;
-  background-position: center;
-}
 .articlebg .bg-pic img{
   width: 100%;
   vertical-align: top;
-  display: none;
+  opacity: 0;
 }
 .class .article-list .article-content{
   padding: 10px 0px;
@@ -169,5 +159,26 @@ html{
   .class .article-list .article-content .article .article-detail{
     width: 60%;
     margin-left: -10%;
+  }
+  .articlebg .bg-pic{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: -1;
+    width: 80%;
+    height: 90%;
+    background: url(xMU-photo/newsbg.svg) right;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width:1024px){
+  .articlebg .bg-pic{
+    height: 105%;
+  }
+}
+@media screen and (min-width:1200px){
+  .articlebg .bg-pic{
+    height: 110%;
   }
 }
