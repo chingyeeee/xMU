@@ -4,12 +4,13 @@ html{
   font-family: 'Roboto', sans-serif;
 }
 .cover{
-  width: 100%;
-  height: 100%;
+  height: 580px;
   position: relative;
   background-image: url(xMU-photo/teacher.png);
   background-size: cover;
   background-position: center;
+  margin-bottom: 50px;
+  z-index: 2;
 }
 .cover img{
   width: 100%;
@@ -255,10 +256,6 @@ button:hover::before {
   }
 }
 @media screen and (min-width:768px){
-  .cover{
-    width: 100%;
-    height: 100%;
-  }
   .cover h2{
     font-size: 48px;
   }
@@ -321,14 +318,14 @@ button:hover::before {
 @media screen and (min-width:1200px){
   .teacher .teacher-content .teacher-book::before{
     content: " ";
-    height: 220px;
+    height: 335px;
     width: 3px;
     background-color:#FDECAE;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
-    top: -30%;
+    top: -47%;
     z-index: -1;
   }
   .teacher .teacher-content .teacher-book .book-content{
