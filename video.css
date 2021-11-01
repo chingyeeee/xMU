@@ -115,7 +115,7 @@ html{
 .video-content .video .video-detail .buy .shop .buynow{
   width: 120px;
   height: 40px;
-  background: #FFF9E1;
+  background-color: #FDECAE;
   border: 3px solid #FDECAE;
   border-radius: 20px;
   font-weight: 500;
@@ -123,15 +123,61 @@ html{
   line-height: 19px;
   letter-spacing: 0.1em;
   color: #6A7382;
+  position: relative;
+  overflow: hidden;
+  transition: .75s;
+  cursor: pointer;
+}
+.buynow::before{
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+  transform: skewX(-25deg)
+}
+.buynow:hover{
+  background-color: #fff9e1;
+}
+.buynow:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s
 }
 .video-content .video .video-detail .buy .shop .cart{
   width: 40px;
   height: 40px;
-  background: #FFF9E1;
+  background-color: #FDECAE;
   border: 3px solid #FDECAE;
   border-radius: 20px;
   text-align: center;
   margin-left: 25px;
+  position: relative;
+  overflow: hidden;
+  transition: .75s;
+  cursor: pointer;
+}
+.cart::before{
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+  transform: skewX(-25deg)
+}
+.cart:hover{
+  background-color: #fff9e1;
+}
+.cart:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s
 }
 .video-content .video .video-detail .buy .shop .cart img{
   vertical-align: top;
@@ -418,7 +464,7 @@ html{
   align-items: center;
   width: 84px;
   height: 38px;
-  background: #FFF9E1;
+  background: #FDECAE;
   border: 3px solid #FDECAE;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: 500;
@@ -427,14 +473,38 @@ html{
   border-radius: 20px;
   letter-spacing: 0.1em;
   color: #6A7382;
+  position: relative;
+  overflow: hidden;
+  transition: .75s;
+}
+.more::before{
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+  transform: skewX(-25deg)
 }
 .more:hover{
-  opacity: .8;
+  background-color: #fff9e1;
 }
-button:hover{
-  opacity: .8;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.25);
+.more:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s
+}
+@-webkit-keyframes shine {
+  100% {
+      left: 125%
+  }
+}
+@keyframes shine {
+  100% {
+      left: 125%
+  }
 }
 @media screen and (min-width: 768px){
   .class .other-course .course{

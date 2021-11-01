@@ -85,6 +85,7 @@ html{
 }
 .xMU-course .course-content{
   justify-content: center;
+  margin-bottom: 80px;
 }
 .xMU-course .course{
   display: flex;
@@ -119,7 +120,7 @@ html{
 button{
   width: 119px;
   height: 40px;
-  background-color: #fff9e1;
+  background-color: #fdecae;
   border: 3px solid #fdecae;
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.25);
@@ -131,6 +132,38 @@ button{
   text-align: center;
   color: #6a7382;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: .75s;
+}
+button::before{
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+  transform: skewX(-25deg)
+}
+button:hover{
+  background-color: #fff9e1;
+}
+button:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s
+}
+@-webkit-keyframes shine {
+  100% {
+      left: 125%
+  }
+}
+@keyframes shine {
+  100% {
+      left: 125%
+  }
 }
 .video-learning{
   padding: 50px;
@@ -139,6 +172,7 @@ button{
   width: 140px;
   margin: auto;
   position: relative;
+  margin-bottom: 20px;
 }
 .video-learning .cate-head::before{
   content: " ";
@@ -218,6 +252,7 @@ button{
   align-items: center;
   padding: 50px 0;
   position: relative;
+  margin-bottom: 30px;
 }
 .video-learning .cate-content .fourcate::after{
   content: " ";
@@ -229,13 +264,15 @@ button{
   left: 0;
   right: 0;
   margin: auto;
+  transition: .4s;
 }
 .video-learning .cate-content .cate:hover{
   animation: dotdot .7s infinite;
   border: 3px solid #FDECAE;
 }
-.video-learning .cate-content .fourcate:hover .fourcate::after{
+.video-learning .cate-content .fourcate:hover::after{
   background: radial-gradient(50% 50% at 50% 50%, #FDECAE 0%, rgba(253, 236, 174, 0) 100%);
+  transition: .4s;
 }
 .video-learning .cate-content .cate .cate-pic{
   width: 100%;
@@ -266,11 +303,12 @@ img{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
-  height: 500px;
+  width: 50%;
+  height: 50%;
   border-radius: 50%;
   background-image: url(xMU-photo/free.png);
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   top: 0;
   bottom: 0;
@@ -329,7 +367,7 @@ img{
   align-items: center;
 }
 .member-feedback .feedback-title{
-  width: 20%;
+  width: 10%;
 }
 .xMU-member h2{
   text-align: center;
@@ -340,9 +378,11 @@ img{
   letter-spacing: 0.05em;
   color: #FFFFFF;
   margin-bottom: 60px;
+  padding: 0 20px 0 40px;
 }
 .xMU-member .feedback{
   display: flex;
+  margin-left: auto;
   width: 80%;
 }
 .xMU-member .feedback .member{
@@ -529,10 +569,90 @@ img{
     bottom:5px;
   }
 }
-@media screen and (min-width:768px){
+@media screen and (max-width:459px){
   .xMU-freecourse .free{
-    width: 600px;
-    height: 600px;
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (max-width:767px){
+  .xMU-sheetmusic .first-five .line .line-pic{
+    position: absolute;
+    display: none;
+  }
+  .xMU-sheetmusic .first-five .order .month{
+    display: none;
+  }
+  .xMU-sheetmusic .first-five .order{
+      width: 40%;
+      margin-left: 50px;
+  }
+  .xMU-sheetmusic .first-five{
+    align-items: flex-end;
+  }
+  .xMU-sheetmusic .first-five:hover .line .line-pic {
+    width: 0%;
+  }
+  .xMU-cover .cover-slogan h2{
+    font-size: 24px;
+  }
+  .xMU-cover .cover-slogan::after{
+    content: " ";
+    width: 250px;
+    height: 250px;
+  }
+  .xMU-freecourse{
+    height: 500px;
+  }
+  .xMU-freecourse .free{
+    width: 100%;
+    height: auto;
+    border-radius: 0%;
+    padding: 30px 0;
+  }
+  .xMU-freecourse .free .free-title h2{
+    font-size: 24px;
+  }
+  .xMU-freecourse .free .free-title p{
+    font-size: 20px;
+  }
+  .xMU-freecourse .free .free-content .content{
+    display: flex;
+    align-items: center;
+  }
+  .xMU-freecourse .free .free-content{  
+    margin: 40px 0 50px 0;
+  }
+  .xMU-freecourse .free .free-content .content:nth-child(2){
+    padding: 19px 0;
+  }
+  .xMU-freecourse .free .free-content .content label{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-right: 12px;
+  }
+  .xMU-freecourse .free .free-content .content input{
+    width: 200px;
+    height: 25px;
+    left: 557px;
+    top: 2448px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: 0;
+  }
+}
+@media screen and (min-width:768px){
+  .member-feedback .feedback-title{
+    width: 20%;
+  }
+  .xMU-freecourse .free{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
   }
 }
 @media screen and (min-width:1024px){
@@ -560,5 +680,13 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .video-learning .cate-head{
+    margin-bottom: 0px;
+    margin: auto;
+  }
+  .xMU-freecourse .free{
+    width: 700px;
+    height: 700px;
   }
 }

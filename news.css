@@ -42,6 +42,7 @@ html{
 .articlebg .bg-pic img{
   width: 100%;
   vertical-align: top;
+  position: absolute;
   opacity: 0;
 }
 .class .article-list .article-content{
@@ -149,10 +150,6 @@ html{
     align-items: center;
     justify-content: center;
   }
-  .articlebg .bg-pic{
-    background-position: center;
-    background-size: cover;
-  }
   .class .article-list .article-content .article .article-pic{
     width: 40%;
   }
@@ -165,20 +162,23 @@ html{
     top: 100px;
     right: 0;
     z-index: -1;
-    width: 80%;
-    height: 90%;
-    background: url(xMU-photo/newsbg.svg) right;
+    width: 70%;
+    height: 100%;
+    background: url(xMU-photo/newsbg.png) right;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 @media screen and (min-width:1024px){
   .articlebg .bg-pic{
+    top: 0px;
     height: 105%;
   }
 }
 @media screen and (min-width:1200px){
   .articlebg .bg-pic{
+    top: -200px;
     height: 110%;
   }
 }
