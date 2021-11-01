@@ -17,9 +17,10 @@ html{
 }
 .tu-content{
   padding: 50px 20px;
+  max-width: 1200px;
 }
 .tu-content .tu-title{
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
 }
 .tu-content .tu-title h2{
   font-weight: 500;
@@ -153,15 +154,26 @@ button:hover::before {
 .tu-free .free-try .phone{
   margin-bottom: 50px;
 }
+@media screen and (min-width:375px){
+  .tu-free .free-try input{
+    width: 200px;
+  }
+}
 @media screen and (min-width:768px){
   .tu-content{
     max-width: 1200px;
     margin: auto;
   }
+  .tu-free .free-try input{
+    width: 300px;
+  }
+  .tu-content .tu-title{
+    margin: 0 30px 50px 30px;
+  }
 }
 @media screen and (min-width:1024px){
   .tu-content .tu-title p{
-  width: 50%;
+  width: 60%;
   }
   .tu-course{
     display: flex;
@@ -174,7 +186,6 @@ button:hover::before {
     justify-content: flex-start;
   }
   .tu-free .free-try{
-    margin-right: 70px;
     text-align: center;
   }
   .tu-course .tu-book{

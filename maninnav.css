@@ -93,7 +93,25 @@
 #menu-control{
   display: none;
 }
-@media screen and (max-width:556px){
+@media screen and (min-width:375px){
+  .xMU-funtion .search .search-logo{
+    width: 20px;
+    height: 20px;
+    -webkit-filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    margin-right: -10px;
+  }
+  .xMU-funtion .shoppingcart{
+    margin: 0px 15px 0px 20px;
+  }
+}
+@media screen and (max-width:1000px){
+  .xMU-funtion .search .search-logo{
+    margin-right: -10px;
+  }
+  .xMU-funtion .shoppingcart{
+    margin: 0px 30px 0 35px;
+  }
   .header .xMU-logo{
     margin-left: 30px;
   }
@@ -188,124 +206,8 @@
   .header{
     display: flex;
   }
-  .xMU-funtion .search .search-logo{
-    width: 20px;
-    height: 20px;
-    -webkit-filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
-    margin-right: -10px;
-  }
-  .xMU-funtion .shoppingcart{
-    margin: 0px 15px 0px 20px;
-  }
 }
-@media screen and (min-width:557px){
-  .header .xMU-logo{
-    margin-left: 50px;
-  }
-  .hb{
-    width: 40px;
-    height: 40px;
-    background-color: rgba(106, 115, 130, 0.8);
-    position: absolute;
-    right: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-  }
-  .hb span{
-    --tb: 19px;
-    width: 25px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 5px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    transition: top .5s .2s,
-               bottom .5s .2s, 
-               opacity .5s, 
-               transform .2s;
-  }
-  .hb span:first-child{
-    top: var(--tb);
-    transform: rotate(0deg);
-  }
-  .hb span:last-child{
-    bottom: var(--tb);
-    transform: rotate(0deg);
-  }
-  .hb span:nth-child(2){
-    opacity: 1;
-  }
-  .mainnav{
-    position: absolute;
-    top: 100%;
-    right: -60%;
-    background-color: rgba(106, 115, 130, 0.8);
-    width: 60%;
-    height: calc(100vh - 60px);
-    transition: right 1s;
-  }
-  #menu-control:checked ~ .xMU-mainnav .nav .header .mainnav{
-    right: 0;
-  }
-  #menu-control:checked ~ .xMU-mainnav .nav .hb span:first-child{
-    top: 0;
-    transform: rotate(315deg);
-    transition: top .5s,
-                bottom .5s, 
-                opacity .5s, 
-                transform .2s .5s;
-  }
-  #menu-control:checked ~ .xMU-mainnav .nav .hb span:last-child{
-    bottom: 0;
-    transform: rotate(-315deg);
-    transition: top .5s,
-                bottom .5s, 
-                opacity .5s, 
-                transform .2s .5s;
-  }
-  #menu-control:checked ~ .xMU-mainnav .nav .hb span:nth-child(2){
-    opacity: 0;
-  }
-  .mainnav li{
-    width: 50%;
-    position: relative;
-    right: -10%;
-  }
-  .mainnav .navcontent{
-    margin: 0px 10px -35px 0px;
-  }
-  .mainnav .content a{
-    display: block;
-    margin: 0 10px;
-    transform: translate(100px, -43px);
-  }
-  .xMU-funtion{
-    position: absolute;
-    right: 100px;
-  }
-  .xMU-funtion .search .searcharea{
-    display: none;
-  }
-  .header{
-    display: flex;
-  }
-  .xMU-funtion .search .search-logo{
-    width: 20px;
-    height: 20px;
-    -webkit-filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
-    margin-right: -10px;
-  }
-  .xMU-funtion .shoppingcart{
-    margin: 0px 30px 0 35px;
-  }
-}
-@media screen and (min-width:1025px){
+@media screen and (min-width:1001px){
   .header .xMU-logo{
     margin-left: 50px;
   }

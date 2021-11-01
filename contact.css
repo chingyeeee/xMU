@@ -9,6 +9,20 @@ html{
   background-position: center;
   height: 580px;
   margin-bottom: 50px;
+  position: relative;
+}
+.cover p{
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: auto;
 }
 .about{
   max-width: 1200px;
@@ -16,19 +30,11 @@ html{
   position: relative;
 }
 .about h2{
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: 0.5em;
-  text-align: center;
-  color: #FFFFFF;
-  position: absolute;
-  left: 50%;
-  top: -290px;
-  transform: translate(-48%,-50%);
+  display: none;
 }
 .about .about-content{
-  max-width: 1200px;
+  width: 100%;
+  margin: auto;
   margin-bottom: 50px;
 }
 .about .about-content .address{
@@ -39,18 +45,14 @@ html{
 }
 .about .about-content h3{
   font-weight: 500;
-  font-size: 24px;
   line-height: 28px;
   text-align: right;
   color: #FFFFFF;
-  width: 20%;
 }
 .about .about-content p{
-  font-size: 18px;
   line-height: 35px;
   letter-spacing: 0.05em;
   color: #FFFFFF;
-  margin-left: 60px;
 }
 .about .about-content .time{
   display: flex;
@@ -70,10 +72,6 @@ html{
   width: 100%;
   margin: 20px;
 }
-.about .about-content .about-pic{
-  width: 100%;
-  text-align: center;
-}
 .about .about-detail{
   width: 100%;
   text-align: center;
@@ -81,6 +79,58 @@ html{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.about-pic {
+  position: relative;
+  padding-bottom: 65.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.about-pic iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@-webkit-keyframes shine {
+  100% {
+      left: 125%
+  }
+}
+@keyframes shine {
+  100% {
+      left: 125%
+  }
+}
+@media screen and (min-width:375px){
+  .about .about-content h3{
+    font-size: 18px;
+    width: 30%;
+  }
+  .about .about-content p{
+    font-size: 14px;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width:768px){
+  .about .about-content h3{
+    font-size: 24px;
+    width: 30%;
+  }
+  .about .about-content p{
+    font-size: 18px;
+    margin-left: 60px;
+  }
+  .about .about-content{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .about .about-detail{
+    width: 70%;
+  }
 }
 @media screen and (min-width:1024px){
   .about .about-content{
@@ -91,7 +141,7 @@ html{
   .cover::before{
     content: " ";
     width: 3px;
-    height: 500px;
+    height: 800px;
     background-color: #E5E5E5;
     position: absolute;
     top: 600px;
@@ -101,11 +151,16 @@ html{
     width: 50%;
   }
   .about .about-content .about-pic{
-    width: 50%;
-    box-sizing: border-box;
-    padding-left: 100px;
+    width: 45%;
+    height: 40%;
+    margin: auto;
   }
-}
-@media screen and (min-width:1200px){
-
+  .about .about-content h3{
+    font-size: 28px;
+    width: 30%;
+  }
+  .about .about-content p{
+    font-size: 22px;
+    margin-left: 60px;
+  }
 }

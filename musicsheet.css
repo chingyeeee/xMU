@@ -222,6 +222,39 @@ button:hover::before {
       left: 125%
   }
 }
+@media screen and (min-width:375px){
+  .order-content .title .content-title .song-name{
+    margin-left: 30px;
+  }
+  .order-content .songlist .song-item .song{
+    margin-left: 40px;
+  }
+  .order-content .songlist .song-item .number{
+    font-size: 20px;
+  }
+  .order-content .songlist .song-item .song .song-title{
+    margin: 10px;
+  }
+  .order-content .songlist .song-item .song .song-title h3{
+    font-size: 16px;
+  }
+  .order-content .songlist .song-item .song .song-title h3>span{
+    font-size: 12px;
+  }
+  .order-content .songlist .song-item .song .song-title .singer{
+    font-size: 12px;
+  }
+  .order-content .songlist .song-item{
+    padding: 10px 30px;
+  }
+  .order-content .songlist .song-item .song .song-pic{
+    width: 30%;
+  }
+  .order-content .songlist .song-item .music{
+    width: 10%;
+    margin-right: 10px;
+  }
+}
 @media screen and (min-width:768px){
   .order-content .title .content-title .song-name{
     margin-left: 200px;
@@ -238,6 +271,9 @@ button:hover::before {
   .order-content .songlist .song-item .song .song-title h3{
     font-size: 20px;
   }
+  .order-content .songlist .song-item .song .song-title h3>span{
+    font-size: 16px;
+  }
   .order-content .songlist .song-item .song .song-title .singer{
     font-size: 16px;
   }
@@ -245,6 +281,16 @@ button:hover::before {
     width: 20%;
   }
   .order-content .songlist .song-item{
-    padding: 10px;
+    padding: 10px 20px;
+  }
+  .order-content .songlist .song-item .music{
+    width: 10%;
+    margin-right: -20px;
+  }
+}
+@media screen and (min-width:1024px){
+  .order-content .songlist .song-item .music{
+    width: 10%;
+    margin-right: -40px;
   }
 }

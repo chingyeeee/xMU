@@ -7,7 +7,6 @@ html{
   background-image: url(xMU-photo/viddeobg.png);
   background-size: cover;
   background-color: #fff;
-  padding: 100px 0;
 }
 .cover h2{
   font-size: 36px;
@@ -25,6 +24,7 @@ html{
   flex-direction: column;
   box-sizing: border-box;
   background-color: #ffffff;
+  max-width: 100%;
 }
 .video-content .video .video-cover {
   position: relative;
@@ -77,7 +77,6 @@ html{
 }
 .video-content .video .video-detail .level img{
   width: 100%;
-
   vertical-align: top;
 }
 .video-content .video .video-detail .buy{
@@ -254,7 +253,8 @@ html{
 .video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-title .play img{
   vertical-align: top;
   width: 100%;
-}.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing{
+}
+.video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -506,12 +506,75 @@ html{
       left: 125%
   }
 }
+@media screen and (min-width: 375px){
+  .cover h2{
+    font-size: 26px;
+  }
+  .video-content .video .video-detail{
+    padding: 20px;
+  }
+  .video-content .video .video-detail .price{
+    font-size: 28px;
+  }
+  .video-content .video .video-detail .buy .rate .rate-pic{
+    width: 30px;
+    height: 38.86px;
+  }
+  .video-content .video .video-detail .buy .rate .rate-score{
+    font-size: 24px;
+  }
+  .video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-title .classname{
+    font-size: 18px;
+  }
+  .video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-time{
+    font-size: 18px;
+  }
+  .video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-title .play{
+    width: 25px;
+    height: 25px;
+  }
+  .video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing .ch-title .classname{
+    font-size: 18px;
+  }
+  .video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing .sing-time .ch-time{
+    font-size: 18px;
+  }
+  .video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter-sing .ch-title .play{
+    width: 25px;
+    height: 25px;
+  }
+  .cover{
+    padding: 100px 0 50px 0;
+  }
+}
 @media screen and (min-width: 768px){
   .class .other-course .course{
     height: 250px;
   }
+  .cover{
+    padding: 100px 0;
+  }
+  .video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-title .classname{
+    font-size: 20px;
+  }
+  .video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-time{
+    font-size: 20px;
+  }
+  .video-content .video-chapter .chapter-content .ch-content .chapter-detail .chapter .ch-title .play{
+    width: 35px;
+    height: 35px;
+  }
 }
 @media screen and (min-width: 1024px){
+  .cover h2{
+    font-size: 36px;
+  }
+  .video-content .video .video-detail{
+    padding: 20px 40px;
+  }
+  .video-content .video .video-detail .price{
+    font-size: 36px;
+  }
   .video-content{
     display: flex;
     margin: auto;
@@ -558,6 +621,9 @@ html{
     background-image: url(xMU-photo/guitarbig.png);
     background-size: cover;
   }
+  .video-content .video-chapter .chapter-content .ch-content .chapter-detail{
+    height: 450px;
+  }
 }
 @media screen and (min-width: 1200px){
   .class{
@@ -568,5 +634,8 @@ html{
   }
   .class .other-course .course{
     height: 200px;
+  }
+  .video-content .video-chapter .chapter-content .ch-content .chapter-detail{
+    height: 550px;
   }
 }

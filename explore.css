@@ -266,39 +266,58 @@ button:hover{
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (max-width:1023px){
-  .video{
-    position: relative;
-  }
-  .video-course .newcourse .slide-right .new .video::before{
-    content: "NEW";
-    padding: 10px;
-    width: 50px;
-    height: 20px;
-    background-color: #FDECAE;
-    color: #4e5e77;
-    position: absolute;
-    top: 20px;
-    text-align: center;
-    font-size: 18px;
+.video{
+  position: relative;
+}
+.video-course .newcourse .slide-right .new .video::before{
+  content: "NEW";
+  padding: 10px;
+  width: 50px;
+  height: 20px;
+  background-color: #FDECAE;
+  color: #4e5e77;
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  font-size: 18px;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.05em;
-  }
-  .video-course .hotcourse .slide-left .hot .video::before{
-    content: "HOT";
-    padding: 10px;
-    width: 50px;
-    height: 20px;
-    background-color: #FFC795;
-    color: #4e5e77;
-    position: absolute;
-    top: 20px;
-    text-align: center;
-    font-size: 18px;
+}
+.video-course .hotcourse .slide-left .hot .video::before{
+  content: "HOT";
+  padding: 10px;
+  width: 50px;
+  height: 20px;
+  background-color: #FFC795;
+  color: #4e5e77;
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  font-size: 18px;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.05em;
+}
+@media screen and (max-width:768px){
+  .video-learning .learning-function .search .order{
+    font-size: 12px;
+  }
+  button{
+    font-size: 12px;
+    margin-left:5px;
+  }
+  .slide-right{
+    padding: 30px 10px 30px 10px;
+  }
+  .slide-left{
+    padding: 30px 10px 30px 10px;
+  }
+  .fourcate{
+    margin: 30px 0 0 0;
+  }
+  .video-learning .learning-function .search .searcharea{
+    width: 75%;
   }
 }
 @media screen and (min-width:1024px){
@@ -336,6 +355,10 @@ button:hover{
   }
   .other h2{
     text-align: left;
+  }
+  .video-course .newcourse .slide-right .new .video::before,
+  .video-course .hotcourse .slide-left .hot .video::before{
+    display: none;
   }
 }
 @media screen and (min-width:1200px){
