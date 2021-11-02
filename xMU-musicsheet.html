@@ -298,7 +298,7 @@
     function slideIn(){
       let slidesong = document.querySelectorAll('.songlist');
       for(let i = 0; i < slidesong.length; i++){
-        if(document.documentElement.scrollTop > (200 + i*150)){
+        if(document.documentElement.scrollTop > (150 + i*120)){
           slidesong[i].classList.add('slidein');
         }else{
           slidesong[i].classList.remove('slidein');
