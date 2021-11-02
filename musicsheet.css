@@ -112,6 +112,13 @@ html{
   -webkit-animation: shine 1s;
   animation: shine 1s
 }
+.songlist{
+  transform: translateX(-100%);
+}
+.slidein{
+  transform: translateX(0);
+  transition: all .5s;
+}
 .order-content .songlist .song-item{
   display: flex;
   align-items: center;

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="maninnav.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="js/jquery-3.6.0.js">
 </head>
 <body>
   <div class="xMU">
@@ -97,7 +98,7 @@
               <div class="sheet">樂譜</div>
             </div>
           </div>
-          <div class="songlist">
+          <div class="songlist slidein">
             <div class="song-item">
               <div class="number">01</div>
               <div class="song">
@@ -114,7 +115,7 @@
               </div>
             </div>
           </div>
-          <div class="songlist">
+          <div class="songlist slidein">
             <div class="song-item">
               <div class="number">02</div>
               <div class="song">
@@ -131,7 +132,7 @@
               </div>
             </div>
           </div>
-          <div class="songlist">
+          <div class="songlist slidein">
             <div class="song-item">
               <div class="number">03</div>
               <div class="song">
@@ -148,7 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="songlist">
+          <div class="songlist slidein">
             <div class="song-item">
               <div class="number">04</div>
               <div class="song">
@@ -165,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="songlist">
+          <div class="songlist slidein">
             <div class="song-item">
               <div class="number">05</div>
               <div class="song">
@@ -182,7 +183,7 @@
               </div>
             </div>
           </div>
-          <div class="songlist">
+          <div class="songlist slidein">
             <div class="song-item">
               <div class="number">06</div>
               <div class="song">
@@ -199,7 +200,7 @@
               </div>
             </div>
           </div>
-          <div class="songlist">
+          <div class="songlist slidein">
             <div class="song-item">
               <div class="number">07</div>
               <div class="song">
@@ -216,7 +217,7 @@
               </div>
             </div>
           </div>
-          <div class="songlist">
+          <div class="songlist slidein">
             <div class="song-item">
               <div class="number">08</div>
               <div class="song">
@@ -233,7 +234,7 @@
               </div>
             </div>
           </div>
-          <div class="songlist">
+          <div class="songlist slidein">
             <div class="song-item">
               <div class="number">09</div>
               <div class="song">
@@ -250,7 +251,7 @@
               </div>
             </div>
           </div>
-          <div class="songlist">
+          <div class="songlist slidein">
             <div class="song-item">
               <div class="number">10</div>
               <div class="song">
@@ -293,5 +294,21 @@
       </div>
     </footer> 
   </div>
+  <script>
+    function slideIn(){
+      let slidesong = document.querySelectorAll('.songlist');
+      for(let i = 0; i < slidesong.length; i++){
+        if(document.documentElement.scrollTop > (200 + i*150)){
+          slidesong[i].classList.add('slidein');
+        }else{
+          slidesong[i].classList.remove('slidein');
+        }
+      }
+    };
+    function init(){
+      window.onscroll = slideIn;
+    }
+    window.addEventListener('load', init, false);
+  </script>
 </body>
 </html>
